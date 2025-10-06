@@ -21,7 +21,7 @@ def div(n1,n2):
 @app.route('/multiplicar/valor1=<int:n1>/valor2=<int:n2>')
 def mult(n1,n2):
     
-    return "resultado da multiplição é {}".format(n1 * n2)
+    return "resultado da multiplicação é {}".format(n1 * n2)
 
 @app.route('/subtrair/valor1=<int:n1>/valor2=<int:n2>')
 def sub(n1,n2):
@@ -29,4 +29,5 @@ def sub(n1,n2):
     return "resultado da subtração é {}".format(n1 - n2)
 
 if __name__ == "__main__":
+
     app.run(debug=True)
